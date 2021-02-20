@@ -1,0 +1,30 @@
+using System;
+
+namespace Obrero
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double horas, h_extra, salario, total, sub;
+            Console.WriteLine("Ingrese el total de horas que trabajo el obrero en la semana: ");
+            horas = int.Parse(Console.ReadLine());
+
+            if (horas >= 41)
+            {                
+                h_extra = horas - 40;
+                total = h_extra * 20;
+                sub = 40 * 16;
+                salario = sub + total;
+                Console.WriteLine("\nEl total de su salario con horas extras es de: " + salario);
+            }
+            else
+            {
+                salario = horas * 16;
+                Console.WriteLine("\nEL total de su salario es de: " + salario);
+            }
+            Console.ReadLine();
+
+        }
+    }
+}

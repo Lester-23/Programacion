@@ -1,0 +1,33 @@
+using System;
+
+namespace DiaSemana
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            byte dias;
+            Console.WriteLine("Selecciona un dia de la semana: ");
+            Console.WriteLine("1. Lunes");
+            Console.WriteLine("2. Martes");
+            Console.WriteLine("3. Miercoles");
+            Console.WriteLine("4. Jueves");
+            Console.WriteLine("5. Viernes");
+            Console.WriteLine("6. Sabado");
+            Console.WriteLine("7. Domingo\n");
+            dias = Convert.ToByte(Console.ReadLine());
+
+            switch(dias)
+            {
+                case 1: Console.WriteLine("\nLunes es un dia laboral"); break;
+                case 2: Console.WriteLine("\nMarteses un dia laboral"); break;
+                case 3: Console.WriteLine("\nMiercoles es un dia laboral"); break;
+                case 4: Console.WriteLine("\nJueves es un dia laboral"); break;
+                case 5: Console.WriteLine("\nViernes es un dia laboral"); break;
+                case 6: Console.WriteLine("\nSabado no es un dia laboral"); break;
+                default: Console.WriteLine("\nDomingo no es un dia laboral"); break;
+            }
+
+        }
+    }
+}

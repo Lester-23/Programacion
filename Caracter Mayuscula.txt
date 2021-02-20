@@ -1,0 +1,22 @@
+using System;
+
+namespace CaracterMayuscula
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            char car = ' ';
+
+            Console.Write("Escriba un Caracter: " + car);
+            car = Convert.ToChar(Console.ReadLine());
+
+            if (char.IsUpper(car))
+                Console.WriteLine("Es una letra mayuscula");
+            else
+                Console.WriteLine("No es una letra mayuscula");
+
+        }
+    }
+}

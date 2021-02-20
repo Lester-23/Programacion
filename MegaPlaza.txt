@@ -1,0 +1,27 @@
+using System;
+
+namespace MegaPlaza
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {            
+            double desc, total, sub_total;
+            Console.WriteLine("Ingrese el total de la compra del cliente: ");
+            desc = int.Parse(Console.ReadLine());
+
+            if(desc>=300)
+            {
+                sub_total = desc * 20 / 100;
+                total = desc - sub_total;
+                Console.WriteLine("\nEl total con el 20% descuento es: " + total);
+            }
+            else
+            {
+                Console.WriteLine("\nLa compra es menor a 300, no tiene descuento");
+            }
+            Console.ReadLine();            
+            
+        }
+    }
+}
